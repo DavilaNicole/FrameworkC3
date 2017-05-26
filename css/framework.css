@@ -1,0 +1,467 @@
+/*
+ * Author: Nicole Davila
+ */
+ 
+/* FONTES */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* **** GERAL**** */
+body {
+	background-color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* TÍTULOS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+/* PARÁGRAFOS E TIPOGRAFIA */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* LINKS */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* **** MENU SUPERIOR **** */
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-inverse {
+	background: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+	background: #ff7878
+}
+
+.navbar-inverse .navbar-brand {
+	color: #999999;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-brand i {
+	color: #ff7878;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+/* **** HEADER - INDEX **** */
+#headerindex {
+	background: url(../img/header.jpg) no-repeat center top;
+	margin-top: -10px;
+	padding-top:20px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerindex h1 {
+	margin-top: 100px;
+	color: white;
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+#headerindex h2 {
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+/* **** OPÇÕES - INDEX **** */
+.opcoes {
+	padding-top: 35px;
+}
+
+.opcoes h4 {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.opcoes i {
+	color: #ff7878;
+	font-size: 30px;
+}
+
+.opcoes p {
+	font-size: 20px;
+}
+
+/* **** SOBRE - INDEX **** */
+#sobre {
+	background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#sobre h4 {
+	font-weight: 700;
+	font-size: 40px;
+}
+#sobre p {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/* **** CONHEÇA - INDEX **** */
+#conheca {
+	background: #ff7878;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+#conheca h4 {
+	color: white;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+#conheca p {
+	color: white;
+	font-size: 20px;
+}
+
+#conheca a {
+	color: black;
+	font-weight: 500;
+	font-size: 25px;
+
+	background: white;
+	border-radius: 3px;
+	padding: 25px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+/* **** CONTATO - INDEX **** */
+#contato {
+	background: #2d2d2d;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#contato i {
+	color: #bdbdbd;
+	font-size: 30px;
+	padding: 20px;
+}
+
+#contato i:hover {
+	color: #ff7878;
+}
+
+/* **** VISÃO - FRAMEWORK **** */
+header {
+	background-color: white;
+}
+
+header.carousel {
+    height: 50%;
+    position: relative;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+/* **** CAROUSEL - FRAMEWORK **** */
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	bottom: -20px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 80px;
+	text-align: center;
+	text-shadow: none;
+}
+.carousel-caption h3, h2 {
+	color: #ff7878;
+	font-size: 35px;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.carousel-caption p {
+	color: #ff7878;
+	font-size: 20px;
+	font-weight: 500;
+}
+.carousel-control {
+	color:#ff7878;
+}
+.carousel-control.left {
+  background-image: none;
+  filter: none;
+  background-repeat: repeat-x;
+}
+.carousel-control.right {
+  background-image: none;
+  filter: none;
+  background-repeat: repeat-x;
+}
+
+.carousel-indicators li {
+	padding-top: 5px;
+  	margin: 30px;
+  	text-indent: 0px;
+  	text-align: center;
+  	background-color: #e0e0e0;
+	font-size: 20px;
+	font-weight: 500;
+}
+.carousel-indicators .active {
+  	width: 12px;
+ 	height: 12px;
+  	margin: 30px;
+
+  	background-color: #ff7878;
+}
+
+/* **** TOOLTIP - FRAMEWORK **** */
+.tooltip {
+  position: relative;
+  display: inline-table;
+  z-index: 10;
+
+}  
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: white;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 10px;
+  top: -150px;
+  right: 100%; 
+  margin-left: -60px; 
+  margin-right: 10px; 
+  border: 2px solid #F05F40;
+}
+
+.tooltiptext {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.tooltiptext p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+}
+.tooltiptext h1 {
+  font-size: 18px;
+
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-ciclo {
+	width: 100px; 
+	height: 215px; 
+	position: absolute;
+	background-color: pink;
+
+}
+
+/*! Dropdown para exibir atividades */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*! Legenda das atividades do framework */
+.list-group-item-atv-gen {
+  color: black;
+  background-color: white;
+}
+.list-group-item-atv-met {
+  color: black;
+  background-color: #ebadd6;
+}
+
+.list-group-item-atv-abor {
+  color: black;
+  background-color: #00e600;
+}
+
+.list-group-item-atv-fin {
+  color: black;
+  background-color: #ffdb4d;
+}
+
+.list-group-item-atv-dsr {
+  color: black;
+  background-color: #ffbf80;
+}
+
+/* **** CICLOS - FRAMEWORK **** */
+#ciclos {
+
+	padding-bottom: 10px;
+}
+
+#ciclos {
+
+	padding-bottom: 10px;
+}
+
+
+/* **** COMPONENTES - FRAMEWORK **** */
+#componentesframework {
+
+
+}
+
+/* **** COMO FUNCIONA - FRAMEWORK **** */
+#comofuncionaframework {
+	background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#comofuncionaframework h4 {
+	font-weight: 700;
+	font-size: 40px;
+}
+#comofuncionaframework p {
+	font-weight: 400;
+	font-size: 20px;
+}
+#atividadesCientificas{
+	background-color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+#criteriosCientificas{
+  background-color: #eeeeee;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+/* **** Tela pequena **** */
+@media (max-width:767px) {
+	.carousel-caption {
+		position: absolute;
+		right: 15%;
+		bottom: -20px;
+		left: 15%;
+		z-index: 10;
+		padding-top: 20px;
+		padding-bottom: 80px;
+		text-align: center;
+		text-shadow: none;
+	}
+	.carousel-caption h3, h2 {
+		color: #ff7878;
+		font-size: 20px;
+		font-weight: 500;
+		padding-bottom: 5px;
+	}
+	.carousel-caption p {
+		color: #ff7878;
+		font-size: 15px;
+		font-weight: 500;
+	}
+}
