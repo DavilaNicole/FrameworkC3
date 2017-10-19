@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Author: Nicole Davila
  */
  
@@ -30,7 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 /* PARÁGRAFOS E TIPOGRAFIA */
 p {
     line-height: 28px;
-    margin-bottom: 25px;
+    margin: 25px;
+
+    font-size: 20px;
 }
 
 .centered {
@@ -74,6 +76,11 @@ hr {
     padding: 0;
 }
 
+.bg-white {
+	background-color: white;
+	color: black;
+}
+
 /* **** MENU SUPERIOR **** */
 .navbar {
 	font-weight: 800;
@@ -88,7 +95,7 @@ hr {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
+	background: #F05F40
 }
 
 .navbar-inverse .navbar-brand {
@@ -99,13 +106,13 @@ hr {
 }
 
 .navbar-inverse .navbar-brand i {
-	color: #ff7878;
+	color: #F05F40;
 	font-size: 22px;
 	letter-spacing: 1px;
 }
 
 /* **** HEADER - INDEX **** */
-#headerindex {
+header {
 	background: url(../img/header.jpg) no-repeat center top;
 	margin-top: -10px;
 	padding-top:20px;
@@ -126,7 +133,7 @@ hr {
     background-size: cover;
 }
 
-#headerindex h1 {
+header h1 {
 	margin-top: 100px;
 	color: white;
 	font-size: 50px;
@@ -134,7 +141,7 @@ hr {
 	letter-spacing: 3px;
 }
 
-#headerindex h2 {
+header h2 {
 	color: white;
 	font-size: 20px;
 	font-weight: 700;
@@ -152,7 +159,7 @@ hr {
 }
 
 .opcoes i {
-	color: #ff7878;
+	color: #F05F40;
 	font-size: 30px;
 }
 
@@ -179,7 +186,7 @@ hr {
 
 /* **** CONHEÇA - INDEX **** */
 #conheca {
-	background: #ff7878;
+	background: #F05F40;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
@@ -208,23 +215,38 @@ hr {
 }
 
 /* **** CONTATO - INDEX **** */
-#contato {
+footer {
 	background: #2d2d2d;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
-#contato i {
+footer i {
 	color: #bdbdbd;
 	font-size: 30px;
 	padding: 20px;
 }
 
-#contato i:hover {
-	color: #ff7878;
+footer i:hover {
+	color: #F05F40;
 }
 
 /* **** VISÃO - FRAMEWORK **** */
+
+#fundamentos {
+ text-align: center;
+}
+
+#fundamentos h1{
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.itemFundamento {
+ padding-bottom: 30px;
+ padding-top: 30px;
+
+}
 header {
 	background-color: white;
 }
@@ -259,18 +281,18 @@ header.carousel .fill {
 	text-shadow: none;
 }
 .carousel-caption h3, h2 {
-	color: #ff7878;
+	color: #F05F40;
 	font-size: 35px;
 	font-weight: 500;
 	padding-bottom: 20px;
 }
 .carousel-caption p {
-	color: #ff7878;
+	color: #F05F40;
 	font-size: 20px;
 	font-weight: 500;
 }
 .carousel-control {
-	color:#ff7878;
+	color:#F05F40;
 }
 .carousel-control.left {
   background-image: none;
@@ -297,7 +319,7 @@ header.carousel .fill {
  	height: 12px;
   	margin: 30px;
 
-  	background-color: #ff7878;
+  	background-color: #F05F40;
 }
 
 /* **** TOOLTIP - FRAMEWORK **** */
@@ -396,20 +418,113 @@ header.carousel .fill {
 
 /* **** CICLOS - FRAMEWORK **** */
 #ciclos {
-
 	padding-bottom: 10px;
 }
 
-#ciclos {
-
-	padding-bottom: 10px;
+#ciclos h2 {
+	font-size: 22px;
+}
+#ciclos h3 {
+	font-size: 20px;
 }
 
-
-/* **** COMPONENTES - FRAMEWORK **** */
-#componentesframework {
-
-
+#ciclos p {
+	font-size: 16px;
+}
+/* **** TIMELINE PROPOSTA **** */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+  font-size: 20px;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+  font-size: 10px;
+}
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
 }
 
 /* **** COMO FUNCIONA - FRAMEWORK **** */
@@ -422,7 +537,7 @@ header.carousel .fill {
 
 #comofuncionaframework h4 {
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 20px;
 }
 #comofuncionaframework p {
 	font-weight: 400;
@@ -437,6 +552,125 @@ header.carousel .fill {
   background-color: #eeeeee;
 	font-size: 20px;
 	font-weight: 400;
+}
+
+#atividadesCientificas{
+	background-color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+#criteriosCientificas{
+  background-color: #eeeeee;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.colunaMetodos {
+	text-align: left;
+
+}
+
+
+.btn-resposta-proposta {
+
+	background: white;
+	font-weight: 500;
+	font-size: 18px;
+
+	color: black;
+	border-radius: 3px;
+	padding: 25px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 20px;
+
+	border-color: white;
+	width: 300px;
+	text-align: left;
+	background-color: #f37559;
+	color: white;
+
+}
+
+.btn-resposta-proposta:hover{
+
+	background-color: white;
+	color:  #F05F40;
+}
+
+.btn-modelo-componente {
+	background: white;
+	font-weight: 500;
+	font-size: 18px;
+
+	color: black;
+	border-style: none;
+
+}
+.btn-modelo-componente:hover {
+	background-color: white;
+	color:  #F05F40;
+}
+
+section {
+	text-align: center;
+	background-color: white;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	
+}
+
+section span {
+	color: #f37559;
+	font-size: 30px;
+}
+section h2 {
+	font-size: 22px;
+}
+section h3 {
+	font-size: 20px;
+}
+
+section p {
+	font-size: 20px;
+}
+
+section a {
+	font-size: 20px;
+}
+
+section hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.btn-guia {
+	background: white;
+	font-weight: 500;
+	font-size: 18px;
+
+	color: black;
+	border-radius: 3px;
+	padding: 25px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 20px;
+
+	border-color: white;
+	width: 100%;
+	text-align: left;
+	background-color: #f37559;
+	color: white;
+
+}
+
+.btn-guia:hover{
+	background-color: white;
+	color:  #F05F40;
 }
 
 
@@ -454,14 +688,17 @@ header.carousel .fill {
 		text-shadow: none;
 	}
 	.carousel-caption h3, h2 {
-		color: #ff7878;
+		color: #F05F40;
 		font-size: 20px;
 		font-weight: 500;
 		padding-bottom: 5px;
 	}
 	.carousel-caption p {
-		color: #ff7878;
+		color: #F05F40;
 		font-size: 15px;
 		font-weight: 500;
 	}
 }
+
+
+
