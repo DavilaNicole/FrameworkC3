@@ -23,13 +23,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">C3 Framework</a>
+                    <a class="navbar-brand" href="index.php">C3 Framework</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Principal</a></li>
-                        <li><a href="framework.html">Conheça o C3</a></li>
-                        <li class="active"><a href="guia.html">Guia do C3</a></li>
+                        <li><a href="index.php">Principal</a></li>
+                        <li><a href="framework.php">Conheça o C3</a></li>
+                        <li class="active"><a href="guia.php">Guia do C3</a></li>
                     </ul>
                 </div>
             </div>
